@@ -1,3 +1,7 @@
 # SVM-Classification
 
-To predict signal peptide regions in the proteins we trained two algorithm (VonHeijn and SVM). the performance evaluation of the SVM and von Heijne methods demonstrate that both method show promising performance in signal peptide detection. SVM achieves a MCC of 0.7466 and F1 score of 0.7438; these resulted metric for von Heijne method was lower (MCC of 0.5905 and F1 score of 0.5909). Based on the obrained results, the SVM method appears to outperform the VH algorithm in detecting signal peptides means It demonstrates higher values across multiple evaluation metrics, including MCC, Q2, precision, recall, and F1 Score. It is noteworthy to mention that the results contribute to the understanding of the strengths and limitations of these methods and can guide researchers in selecting the most suitable approach for their specific applications.
+
+To predict protein signal peptides, two algorithms, VonHeijn and SVM, were trained. 
+We found the hyperparameter of SVM method by 5-fold cross validation and then we applied on the blind dataset. The final results are as following:
+SVM outperformed VonHeijn with an MCC of 0.7466 and F1 score of 0.7438, compared to VonHeijn's MCC of 0.5905 and F1 score of 0.5909. 
+For further details, check the notebook and pdf file.
